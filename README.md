@@ -34,15 +34,15 @@ the project using the link in the header.
 To setup the package repository, run these commands:
 
 ```sh
-$ wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo tee /etc/apt/trusted.gpg.d/shiftkey-desktop.asc > /dev/null
-$ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
-$ sudo apt-get update
+wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo tee /etc/apt/trusted.gpg.d/shiftkey-desktop.asc > /dev/null
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftkey-desktop.list'
+sudo apt-get update
 ```
 
 Then install GitHub Desktop:
 
 ```sh
-$ sudo apt install github-desktop
+sudo apt install github-desktop
 ```
 
 ### Red Hat/CentOS/Fedora distributions
